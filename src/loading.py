@@ -14,44 +14,53 @@ from typing import Optional
 
 import config as conf
 
-def read_data(
-    bucket_name: str,
-    path_file: str,
-    filename: str=None,
-    sep: str=",",
-    compression: str="infer",
-) -> None:
-    if filename:
-        path_file = os.path.join(path_file, filename)
-    path_s3 = os.path.join("s3://", bucket_name, path_file)
-    logging.info("Data will be loaded from {}".format(path_file))
-    df = pd.read_csv(path_s3, sep=sep, compression=compression)
-    return df
+def _use_s3() -> bool:
+    """Return True only if BUCKET_NAME is non-empty."""
+    return bool(conf.BUCKET_NAME)
 
-
-def save_csv(
-    df: pd.DataFrame,
-    bucket_name: str,
-    path_file: str,
-    filename: str=None,
-    index: bool=False,
-) -> None:
+def read_data(path_file: str,
+              filename: str = None,
+              sep: str = ",",
+              compression: str = "infer") -> pd.DataFrame:
     """
-    Save a pandas dataframe into s3
-
-    Args:
-        df (DataFrame): pandas dataset to save
-    bucket (str): name of the bucket (not ending with '/')
-    path (str): path of the file without '/' at the beginning and ending with .csv
-    Returns:
-        None
+    If conf.BUCKET_NAME is set, read from s3://BUCKET_NAME/path_file/filename
+    Otherwise read from local disk at path_file/filename
     """
     if filename:
-        path_file = os.path.join(path_file, filename)
-    path_s3 = os.path.join("s3://", bucket_name, path_file)
-    logging.info("Data will be saved in {}".format(path_s3))
-    df.to_csv(path_s3, index=index)
+        path = os.path.join(path_file, filename)
+    else:
+        path = path_file
 
+    if _use_s3():
+        s3_uri = f"s3://{conf.BUCKET_NAME}/{path}"
+        logging.info(f"Loading from S3: {s3_uri}")
+        return pd.read_csv(s3_uri, sep=sep, compression=compression)
+    else:
+        logging.info(f"Loading locally: {path}")
+        return pd.read_csv(path, sep=sep, compression=compression)
+
+
+def save_csv(df: pd.DataFrame,
+             path_file: str,
+             filename: str = None,
+             index: bool = False) -> None:
+    """
+    If conf.BUCKET_NAME is set, write to s3://BUCKET_NAME/path_file/filename
+    Otherwise write to local disk at path_file/filename
+    """
+    if filename:
+        path = os.path.join(path_file, filename)
+    else:
+        path = path_file
+
+    if _use_s3():
+        s3_uri = f"s3://{conf.BUCKET_NAME}/{path}"
+        logging.info(f"Saving to S3: {s3_uri}")
+        df.to_csv(s3_uri, index=index)
+    else:
+        logging.info(f"Saving locally: {path}")
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        df.to_csv(path, index=index)
 
 def read_dict(bucket_name: str,
               path: str):

@@ -49,7 +49,8 @@ def main():
                             ref_key=conf.REFERENTIAL_VAR_NAME,
                             shuffle=True)   
              
-        # prompt a synthetic dataset of n_rows
+        # prompt a synthetic dataset of n_rows7
+
         df_synth_int = prompt_synth_tab(prompt=prompt,
                         model=conf.SDG_MODEL,
                         n_rows=conf.N_ROWS,
@@ -78,27 +79,28 @@ def main():
     text_time = f"Execution time: {time}"
     logging.info(text_time)
     
-    # saving data
+    # saving data (locally)
     if args.save:
-        if args.synth_dataset:
-                
-                if args.synth_dataset != 'None':
-                    path_file = args.synth_dataset
-                else:
-                    path_file = os.path.join(conf.PATH_SYNTH_DATA, conf.FILE_SYNTHESIZED_DATA)
-        save_csv(df_synth,
-                         conf.BUCKET_NAME,
-                         path_file=path_file)
-        save_text(prompt,
-                conf.BUCKET_NAME,
-                conf.PATH_SYNTH_DATA, 
-                conf.FILE_SYNTHESIZED_DATA_PROMPT,
-                )
-        save_text(text_time,
-                conf.BUCKET_NAME,
-                conf.PATH_SYNTH_DATA, 
-                conf.FILE_SYNTHESIZED_DATA_TIME,
-                )
+        # ensure the output directory exists
+        os.makedirs(conf.PATH_SYNTH_DATA, exist_ok=True)
+
+        # 1) save the synthesized CSV
+        out_csv = os.path.join(conf.PATH_SYNTH_DATA, conf.FILE_SYNTHESIZED_DATA)
+        df_synth.to_csv(out_csv, index=False)
+        logging.info(f"Wrote synthetic data to {out_csv}")
+
+        # 2) save the prompt you used
+        out_prompt = os.path.join(conf.PATH_SYNTH_DATA, conf.FILE_SYNTHESIZED_DATA_PROMPT)
+        with open(out_prompt, "w") as f:
+            f.write(prompt)
+        logging.info(f"Wrote prompt text to {out_prompt}")
+
+        # 3) save the timing
+        out_time = os.path.join(conf.PATH_SYNTH_DATA, conf.FILE_SYNTHESIZED_DATA_TIME)
+        with open(out_time, "w") as f:
+            f.write(text_time)
+        logging.info(f"Wrote timing info to {out_time}")
+
 if __name__ == "__main__":
     
     main()

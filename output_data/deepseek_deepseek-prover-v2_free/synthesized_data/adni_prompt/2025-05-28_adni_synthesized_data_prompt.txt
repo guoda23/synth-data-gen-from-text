@@ -1,0 +1,19 @@
+Give an example table of 10 rows from ADNI data set. The Alzheimer's Disease Neuroimaging Initiative (ADNI) is an observational study designed to develop clinical, imaging, genetic, and biochemical biomarkers for the early detection and tracking of Alzheimer's disease (AD). Only consider patients with Alzheimer's Disease diagnosis. 
+        The table must have one row by patient, no missing values and include all the following columns: 
+PTID: patient unique identifier, integer 
+AGE: Age in years|float|| 
+WholeBrain_bl: UCSF WholeBrain, volume of the whole brain measured by MRI, with the analysis conducted at the University of California, San Francisco (UCSF)|integer|| 
+ICV_bl: UCSF ICV, intracranial volume measured by MRI, with the analysis conducted at the University of California, San Francisco (UCSF)|integer|| 
+ADAS11: Alzheimer’s Disease Assessment Scale, 11-item version|float|| 
+PTGENDER: Sex|integer|{0: male, 1: female}| 
+MMSE: Mini-Mental State Examination|float|| 
+APOE4: APOE e4 carrier status|integer|| 
+PTEDUCAT: Years of education|integer|| 
+CDRSB: CDR-SB|float|| 
+Ventricles_bl: UCSF Ventricles, volume of the brain's ventricles measured by MRI, with the analysis conducted at the University of California, San Francisco (UCSF)|integer|| 
+Return the table as a dictionary in JSON format with keys as index. JSON format strictly requires double quotes for strings. The column names need to be the same than those provided.
+Only return the dictionary, do not repeat the question, introduce your answer or comment on it. Do not truncate the table, provide all the rows.
+
+Here is an example for one patient with the associated key of the dictionary to output: 
+
+{'0': {'PATNO': '022_S_0004', 'AGE': 74, 'PTGENDER': 1, 'PTEDUCAT': 15.5, 'APOE4': 1, 'CDRSB': 4.3, 'ADAS11': 18.6, 'MMSE': 23.3, 'Ventricles_bl': 39300, 'WholeBrain_bl': 1066000, 'ICV_bl': 1500000}}

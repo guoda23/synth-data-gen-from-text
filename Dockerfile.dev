@@ -36,6 +36,10 @@ RUN poetry config virtualenvs.create false \
 COPY . .
 
 # Now that we have the code, install entrypoints
+
+# Give Poetry more time to fetch large packages
+ENV POETRY_HTTP_TIMEOUT=600
+
 RUN poetry install --no-interaction --no-ansi
 
 RUN poetry run python -m ipykernel install --user --name synth-data-gen-from-text

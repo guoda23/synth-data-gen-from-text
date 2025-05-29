@@ -21,6 +21,7 @@ copulas = "0.11.0"
 mistralai = "^0.4.0"
 transformers = "^4.41.2"
 tikzplotly = "^0.1.6"
+openrouter = "^1.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.2.1"
@@ -65,7 +66,7 @@ ignore_missing_imports = true
 [[tool.poetry.source]]
 name = "pypi.org"
 url = "https://pypi.org/simple"
-priority = "default"
+priority = "primary"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
