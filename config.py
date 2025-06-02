@@ -24,8 +24,8 @@ SDG_MODEL = RAW_SDG
 SDG_MODEL_FS = re.sub(r"[/:]", "_", SDG_MODEL)
 
 RANDOM_STATE = 1
-N_ROWS = 2
-N_SAMPLE = 2
+N_ROWS = 10
+N_SAMPLE = 100
 # name of prompt if GPT model OR name of database if standard SDG model
 PROMPT_ID = "wellconnect_prompt" #"adni_prompt" #"ppmi_prompt #"wellconnect_prompt"
 DATE = (

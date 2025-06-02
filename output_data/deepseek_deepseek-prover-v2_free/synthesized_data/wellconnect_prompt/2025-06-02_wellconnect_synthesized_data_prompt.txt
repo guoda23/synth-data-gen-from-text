@@ -1,45 +1,45 @@
-Give an example table of 2 rows from WellConnect data set. WellConnect is a cohort study designed to investigate the effects of social connection on mildly to moderatrely depressed patients (PHQ-9 within 5 to 15) living in Amsterdam, the Netherlands. Only consider patients with mild to moderate depression (PHQ-9 score between 5 and 15) and only individuals from Amsterdam, the Netherlands. 
+Give an example table of 10 rows from WellConnect data set. WellConnect is a cohort study designed to investigate the effects of social connection on mildly to moderatrely depressed patients (PHQ-9 within 5 to 15) living in Amsterdam, the Netherlands. Only consider patients with mild to moderate depression (PHQ-9 score between 5 and 15) and only individuals from Amsterdam, the Netherlands. 
         The table must have one row by patient, no missing values and include all the following columns:
 PTID: patient unique identifier, string
-PANCRS_EnhancingFriendship: Average agreement with items reflecting how co-rumination strengthens the friendship bond (e.g. “Talking with my friend about problems makes us feel closer”).||1.0-5.0| 
-PHQ9_q6: PHQ-9 Question 6: “Feeling bad about yourself—or that you are a failure or have let yourself or your family down”||0-3| 
-PANCRS_TotalPositive: Mean of the three positive co-rumination subscales (Affirmation, ProblemSolving, EnhancingFriendship).||1.0-5.0| 
-TIPI_Extraversion: Personality test Big Five component Extraversion as measured by a condensed TIPI (Ten Item Personality Measure) questionnaire||1.0–7.0| 
-PANCRS_Slack: Average agreement with items reflecting unhelpful or stuck conversation patterns (e.g. “Our talk goes over the same concerns without moving forward”).||1.0-5.0| 
-TIPI_Agreeableness: Personality test Big Five component Agreeableness as measured by a condensed TIPI (Ten Item Personality Measure) questionnaire||1.0–7.0| 
-PHQ9_Total: Total PHQ-9 score (sum of q1–q9; range 0–27)||0–27 (higher = more severe)| 
-PANCRS_TotalNegative: Mean of the four negative co-rumination subscales (WorryAboutEvaluation, InhibitingHappiness, WorryAboutImpact, Slack).||1.0-5.0| 
-PHQ9_q4: PHQ-9 Question 4: “Feeling tired or having little energy”||0-3| 
-PANCRS_FrequencyNegative: Average reported frequency of engaging in negative co-rumination behaviors (WorryAboutEvaluation, InhibitingHappiness, WorryAboutImpact, Slack).||1.0-5.0| 
-Nationality: Participant’s legal nationality||Open text or list| 
-PANCRS_WorryAboutEvaluation: Average agreement with items reflecting concern over being judged by friends (e.g. “I worry that my friend thinks less of me when I share my problems”).||1.0-5.0| 
-PANCRS_ProblemSolving: Average agreement with items reflecting collaborative problem-solving talk (e.g. “We brainstorm ways to fix what’s bothering me”).||1.0-5.0| 
-PHQ9_q1: PHQ-9 Question 1: “Little interest or pleasure in doing things” (0 = Not at all…3 = Nearly every day)||0-3| 
-TIPI_Openness: Personality test Big Five component Openness to experience as measured by a condensed TIPI (Ten Item Personality Measure) questionnaire||1.0–7.0| 
-PHQ9_q7: PHQ-9 Question 7: “Trouble concentrating on things (e.g., reading, watching TV)”||0-3| 
-CountryOfBirthFather: Father’s country of birth||Netherlands; Other| 
-CountryOfBirthMother: Mother’s country of birth||Netherlands; Other| 
-PANCRS_WorryAboutImpact: Average agreement with items reflecting anxiety about one’s problems burdening friends (e.g. “I worry that my friend gets upset hearing about my issues”).||1.0-5.0| 
-CountryOfBirth: Country where participant was born||Netherlands; Other| 
 Ethnicity: Self-described ethnicity/cultural background||Nederlands; Surinaams; Turks; Marokkaans; Anders (specificeer): __________; Ik wil het liever niet zeggen| 
-PHQ9_q5: PHQ-9 Question 5: “Poor appetite or overeating”||0-3| 
-PANCRS_TotalFrequency: Mean of the FrequencyPositive and FrequencyNegative scores, reflecting overall co-rumination frequency.||1.0-5.0| 
-PHQ9_q2: PHQ-9 Question 2: “Feeling down, depressed, or hopeless”||0-3| 
-EducationLevel: Highest completed education||Geen opleiding; Basisonderwijs; Vmbo/Mavo; Havo/Vwo; Mbo (niveau 1-4); HBO; Universiteit (Bachelor, Master, of hoger); Anders (specificeer): __________| 
-TIPI_Conscientiousness: Personality test Big Five component Conscientiousness as measured by a condensed TIPI (Ten Item Personality Measure) questionnaire||1.0–7.0| 
-PANCRS_InhibitingHappiness: Average agreement with items reflecting how co-rumination dampens positive emotions (e.g. “When we talk about problems, I find it hard to feel happy even later”).||1.0-5.0| 
-PANCRS_Affirmation: Average agreement with items reflecting how much friends offer emotional support and validation when discussing problems (e.g. “My friend lets me know I’m not alone in how I feel”).||1.0-5.0| 
-PANCRS_FrequencyPositive: Average reported frequency (e.g. 1=never…5=very often) of engaging in positive co-rumination behaviors (Affirmation, ProblemSolving, EnhancingFriendship).||1.0-5.0| 
-TIPI_Neuroticism: Personality test Big Five component Neuroticism as measured by a condensed TIPI (Ten Item Personality Measure) questionnaire||1.0–7.0| 
-Sex: Participant’s sex assigned at birth||Male; Female| 
-PHQ9_q3: PHQ-9 Question 3: “Trouble falling or staying asleep, or sleeping too much”||0-3| 
 Postcode: Participant’s Dutch postal code (4 digits + 2 letters, e.g. “1011AB”) within Amsterdam area||| 
+PHQ9_q3: PHQ-9 Question 3: “Trouble falling or staying asleep, or sleeping too much”||0-3| 
+PANCRS_Affirmation: Average agreement with items reflecting how much friends offer emotional support and validation when discussing problems (e.g. “My friend lets me know I’m not alone in how I feel”).||1.0-5.0| 
+TIPI_Openness: Personality test Big Five component Openness to experience as measured by a condensed TIPI (Ten Item Personality Measure) questionnaire||1.0–7.0| 
+PHQ9_q4: PHQ-9 Question 4: “Feeling tired or having little energy”||0-3| 
+PANCRS_EnhancingFriendship: Average agreement with items reflecting how co-rumination strengthens the friendship bond (e.g. “Talking with my friend about problems makes us feel closer”).||1.0-5.0| 
+PANCRS_TotalPositive: Mean of the three positive co-rumination subscales (Affirmation, ProblemSolving, EnhancingFriendship).||1.0-5.0| 
+Nationality: Participant’s legal nationality||Open text or list| 
 Age: Participant’s age bracket||| 
-PHQ9_q8: PHQ-9 Question 8: “Moving or speaking so slowly that other people could notice—or the opposite, being so fidgety or restless that you have been moving a lot more than usual”||0-3| 
-EmploymentStatus: Participant’s current employment or activity status||Betaalde baan (fulltime); Gedeeltelijk betaalde baan (parttime); Zorg voor het huishouden (eventueel kinderen); Gepensioneerd of met prepensioen; Scholier of student, naam opleiding: …; Vrijwilligerswerk; Gedeeltelijk / geen betaald werk vanwege gezondheidsproblemen; Geen betaald werk om andere redenen (bv. vanwege onvrijwillige werkloosheid of vrijwilligerswerk); Anders (specificeer): __________| 
-Religion: Self-reported religion||Christendom; Islam; Jodendom; Hindoeïsme; Boeddhisme; Geen religie; Agnostisch; Anders (specificeer): __________; Ik wil het liever niet zeggen| 
+PANCRS_TotalNegative: Mean of the four negative co-rumination subscales (WorryAboutEvaluation, InhibitingHappiness, WorryAboutImpact, Slack).||1.0-5.0| 
+PHQ9_q1: PHQ-9 Question 1: “Little interest or pleasure in doing things” (0 = Not at all…3 = Nearly every day)||0-3| 
 PHQ9_q9: PHQ-9 Question 9: “Thoughts that you would be better off dead or of hurting yourself in some way”||0-3| 
+EducationLevel: Highest completed education||Geen opleiding; Basisonderwijs; Vmbo/Mavo; Havo/Vwo; Mbo (niveau 1-4); HBO; Universiteit (Bachelor, Master, of hoger); Anders (specificeer): __________| 
+PANCRS_FrequencyPositive: Average reported frequency (e.g. 1=never…5=very often) of engaging in positive co-rumination behaviors (Affirmation, ProblemSolving, EnhancingFriendship).||1.0-5.0| 
+PANCRS_Slack: Average agreement with items reflecting unhelpful or stuck conversation patterns (e.g. “Our talk goes over the same concerns without moving forward”).||1.0-5.0| 
+PHQ9_q5: PHQ-9 Question 5: “Poor appetite or overeating”||0-3| 
+Sex: Participant’s sex assigned at birth||Male; Female| 
+PHQ9_q2: PHQ-9 Question 2: “Feeling down, depressed, or hopeless”||0-3| 
+PANCRS_ProblemSolving: Average agreement with items reflecting collaborative problem-solving talk (e.g. “We brainstorm ways to fix what’s bothering me”).||1.0-5.0| 
+EmploymentStatus: Participant’s current employment or activity status||Betaalde baan (fulltime); Gedeeltelijk betaalde baan (parttime); Zorg voor het huishouden (eventueel kinderen); Gepensioneerd of met prepensioen; Scholier of student, naam opleiding: …; Vrijwilligerswerk; Gedeeltelijk / geen betaald werk vanwege gezondheidsproblemen; Geen betaald werk om andere redenen (bv. vanwege onvrijwillige werkloosheid of vrijwilligerswerk); Anders (specificeer): __________| 
 Gender: Participant’s Gender identity||Man; Woman; Trans man; Trans woman; Non-binary; Other; Prefer not to say| 
+CountryOfBirth: Country where participant was born||Netherlands; Other| 
+TIPI_Conscientiousness: Personality test Big Five component Conscientiousness as measured by a condensed TIPI (Ten Item Personality Measure) questionnaire||1.0–7.0| 
+TIPI_Neuroticism: Personality test Big Five component Neuroticism as measured by a condensed TIPI (Ten Item Personality Measure) questionnaire||1.0–7.0| 
+TIPI_Extraversion: Personality test Big Five component Extraversion as measured by a condensed TIPI (Ten Item Personality Measure) questionnaire||1.0–7.0| 
+PANCRS_InhibitingHappiness: Average agreement with items reflecting how co-rumination dampens positive emotions (e.g. “When we talk about problems, I find it hard to feel happy even later”).||1.0-5.0| 
+CountryOfBirthFather: Father’s country of birth||Netherlands; Other| 
+Religion: Self-reported religion||Christendom; Islam; Jodendom; Hindoeïsme; Boeddhisme; Geen religie; Agnostisch; Anders (specificeer): __________; Ik wil het liever niet zeggen| 
+TIPI_Agreeableness: Personality test Big Five component Agreeableness as measured by a condensed TIPI (Ten Item Personality Measure) questionnaire||1.0–7.0| 
+PHQ9_q8: PHQ-9 Question 8: “Moving or speaking so slowly that other people could notice—or the opposite, being so fidgety or restless that you have been moving a lot more than usual”||0-3| 
+PHQ9_q7: PHQ-9 Question 7: “Trouble concentrating on things (e.g., reading, watching TV)”||0-3| 
+PANCRS_FrequencyNegative: Average reported frequency of engaging in negative co-rumination behaviors (WorryAboutEvaluation, InhibitingHappiness, WorryAboutImpact, Slack).||1.0-5.0| 
+PHQ9_q6: PHQ-9 Question 6: “Feeling bad about yourself—or that you are a failure or have let yourself or your family down”||0-3| 
+PHQ9_Total: Total PHQ-9 score (sum of q1–q9; range 0–27)||0–27 (higher = more severe)| 
+PANCRS_WorryAboutEvaluation: Average agreement with items reflecting concern over being judged by friends (e.g. “I worry that my friend thinks less of me when I share my problems”).||1.0-5.0| 
+PANCRS_WorryAboutImpact: Average agreement with items reflecting anxiety about one’s problems burdening friends (e.g. “I worry that my friend gets upset hearing about my issues”).||1.0-5.0| 
+CountryOfBirthMother: Mother’s country of birth||Netherlands; Other| 
+PANCRS_TotalFrequency: Mean of the FrequencyPositive and FrequencyNegative scores, reflecting overall co-rumination frequency.||1.0-5.0| 
 Return the table as a dictionary in JSON format with keys as index. JSON format strictly requires double quotes for strings. The column names need to be the same as those provided.
 Only return the dictionary, do not repeat the question, introduce your answer or comment on it. Do not truncate the table, provide all the rows.
 

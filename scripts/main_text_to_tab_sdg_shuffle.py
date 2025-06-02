@@ -42,6 +42,7 @@ def main():
     # number of total rows in synthetic dataframe
     n_synth = 0
     while n_synth < conf.N_SAMPLE:
+        logging.info(f"Currently {n_synth} rows synthesized out of {conf.N_SAMPLE}")
         # parse prompt by shuffling order of variables
         prompt = parse_prompt(prompt_dict=conf.TEXT2TAB_PROMPT_DICT[conf.PROMPT_ID],
                             prompt_example=conf.ROW_EXAMPLE,
@@ -60,14 +61,14 @@ def main():
         # verify that the dataframe contains all expected columns 
         all_cols_in_list_bool = all(col in df_synth_int.columns for col in list_cols)
 
-        # TEST!! save the prompt you used
-        out_prompt = os.path.join(conf.PATH_SYNTH_DATA, conf.FILE_SYNTHESIZED_DATA_PROMPT)
-        with open(out_prompt, "w") as f:
-            f.write(prompt)
-        logging.info(f"TEST: Wrote prompt text to {out_prompt}")
+        # # TEST!! save the prompt you used
+        # out_prompt = os.path.join(conf.PATH_SYNTH_DATA, conf.FILE_SYNTHESIZED_DATA_PROMPT)
+        # with open(out_prompt, "w") as f:
+        #     f.write(prompt)
+        # logging.info(f"TEST: Wrote prompt text to {out_prompt}")
         
         if all_cols_in_list_bool:
-
+            logging.info(f"All columns generated successfully!")
             # remove missing values if any 
             df_synth_int = utils_df.rm_null_rows(df=df_synth_int)
             
