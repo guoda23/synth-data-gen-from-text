@@ -55,10 +55,17 @@ def main():
                         model=conf.SDG_MODEL,
                         n_rows=conf.N_ROWS,
                         n_sample=conf.N_ROWS,
-                        show_progress=False)
+                        show_progress=True)
         
         # verify that the dataframe contains all expected columns 
         all_cols_in_list_bool = all(col in df_synth_int.columns for col in list_cols)
+
+        # TEST!! save the prompt you used
+        out_prompt = os.path.join(conf.PATH_SYNTH_DATA, conf.FILE_SYNTHESIZED_DATA_PROMPT)
+        with open(out_prompt, "w") as f:
+            f.write(prompt)
+        logging.info(f"TEST: Wrote prompt text to {out_prompt}")
+        
         if all_cols_in_list_bool:
 
             # remove missing values if any 
@@ -69,6 +76,13 @@ def main():
             synth_data.append(df_synth_int)
             n_synth += len(df_synth_int)
             pbar.update(n_synth)
+        else:
+            #get missing columns
+            missing_cols = [col for col in list_cols if col not in df_synth_int.columns]
+            logging.info(f"Not all columns in list. Missing columnts: {missing_cols}. \nRetrying...")
+            #print generated columns
+            logging.info(f"Generated columns: {df_synth_int.columns.tolist()}")
+            
     pbar.close()
    
     df_synth = pd.concat(synth_data, axis=0)

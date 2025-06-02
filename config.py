@@ -18,14 +18,14 @@ PIPELINE_STEPS_TO_PERFORM = [
 ]
 
 DATABASE = "wellconnect" #"adni" # ppmi2024 OR ppmi OR wellconnect
-RAW_SDG = "deepseek/deepseek-r1-0528:free" #"gpt-4-turbo" # gpt-4-turbo, ctgan, tvae, copula, mistral-large-largest, gpt-3.5-turbo
+RAW_SDG = "deepseek/deepseek-prover-v2:free" #"gpt-4-turbo" # gpt-4-turbo, ctgan, tvae, copula, mistral-large-largest, gpt-3.5-turbo
 # Create a filesystem‐friendly version
 SDG_MODEL = RAW_SDG
 SDG_MODEL_FS = re.sub(r"[/:]", "_", SDG_MODEL)
 
 RANDOM_STATE = 1
-N_ROWS = 10
-N_SAMPLE = 1000
+N_ROWS = 2
+N_SAMPLE = 2
 # name of prompt if GPT model OR name of database if standard SDG model
 PROMPT_ID = "wellconnect_prompt" #"adni_prompt" #"ppmi_prompt #"wellconnect_prompt"
 DATE = (
@@ -154,17 +154,16 @@ LIST_FTR_RM = []
             
 #list of features WellConnect
 LIST_FTR = [
-    "ParticipantID",
-    "PHQ-9-q1",
-    "PHQ-9-q2",
-    "PHQ-9-q3",
-    "PHQ-9-q4",
-    "PHQ-9-q5",
-    "PHQ-9-q6",
-    "PHQ-9-q7",
-    "PHQ-9-q8"
-    ,"PHQ-9-q9",
-    "PHQ-9-total",
+    "PHQ9_q1",
+    "PHQ9_q2",
+    "PHQ9_q3",
+    "PHQ9_q4",
+    "PHQ9_q5",
+    "PHQ9_q6",
+    "PHQ9_q7",
+    "PHQ9_q8",
+    "PHQ9_q9",
+    "PHQ9_Total",
     "Age",
     "Sex",
     "Gender",
@@ -177,23 +176,23 @@ LIST_FTR = [
     "Religion",
     "Postcode",
     "EmploymentStatus",
-    "TIPI-Extraversion",
-    "TIPI-Agreeableness",
-    "TIPI-Conscientiousness",
-    "TIPI-Neuroticism",
-    "TIPI-Openness",
-    "PANCRS-Affirmation",
-    "PANCRS-ProblemSolving",
-    "PANCRS-EnhancingFriendship",
-    "PANCRS-TotalPositive",
-    "PANCRS-WorryAboutEvaluation",
-    "PANCRS-InhibitingHappiness",
-    "PANCRS-WorryAboutImpact",
-    "PANCRS-Slack",
-    "PANCRS-TotalNegative",
-    "PANCRS-FrequencyPositive",
-    "PANCRS-FrequencyNegative",
-    "PANCRS-TotalFrequency",
+    "TIPI_Extraversion",
+    "TIPI_Agreeableness",
+    "TIPI_Conscientiousness",
+    "TIPI_Neuroticism",
+    "TIPI_Openness",
+    "PANCRS_Affirmation",
+    "PANCRS_ProblemSolving",
+    "PANCRS_EnhancingFriendship",
+    "PANCRS_TotalPositive",
+    "PANCRS_WorryAboutEvaluation",
+    "PANCRS_InhibitingHappiness",
+    "PANCRS_WorryAboutImpact",
+    "PANCRS_Slack",
+    "PANCRS_TotalNegative",
+    "PANCRS_FrequencyPositive",
+    "PANCRS_FrequencyNegative",
+    "PANCRS_TotalFrequency",
 ]
 
 
@@ -253,17 +252,16 @@ DATABASE_DESCRIPTION = DATABASE_DESCRIPTION_DICT[DATABASE]
 #row example WellConnect
 ROW_EXAMPLE = {
   "0": {
-    "ParticipantID": "01621127115",
-    "PHQ-9-q1": 1,
-    "PHQ-9-q2": 2,
-    "PHQ-9-q3": 1,
-    "PHQ-9-q4": 2,
-    "PHQ-9-q5": 1,
-    "PHQ-9-q6": 2,
-    "PHQ-9-q7": 1,
-    "PHQ-9-q8": 1
-    ,"PHQ-9-q9": 1,
-    "PHQ-9-total": 12,
+    "PHQ9_q1": 1,
+    "PHQ9_q2": 2,
+    "PHQ9_q3": 1,
+    "PHQ9_q4": 2,
+    "PHQ9_q5": 1,
+    "PHQ9_q6": 2,
+    "PHQ9_q7": 1,
+    "PHQ9_q8": 1,
+    "PHQ9_q9": 1,
+    "PHQ9_Total": 12,
     "Age": "18-24 jaar",
     "Sex": "Vrouw",
     "Gender": "Vrouw",
@@ -276,23 +274,23 @@ ROW_EXAMPLE = {
     "Religion": "Islam",
     "Postcode": "1104CA",
     "EmploymentStatus": "Betaalde baan (fulltime)",
-    "TIPI-Extraversion": 3.0,
-    "TIPI-Agreeableness": 5.5,
-    "TIPI-Conscientiousness": 4.0,
-    "TIPI-Neuroticism": 2.5,
-    "TIPI-Openness": 4.5,
-    "PANCRS-Affirmation": 4.00,
-    "PANCRS-ProblemSolving": 3.80,
-    "PANCRS-EnhancingFriendship": 4.00,
-    "PANCRS-TotalPositive": 3.80,
-    "PANCRS-WorryAboutEvaluation": 3.20,
-    "PANCRS-InhibitingHappiness": 3.00,
-    "PANCRS-WorryAboutImpact": 2.80,
-    "PANCRS-Slack": 2.40,
-    "PANCRS-TotalNegative": 2.80,
-    "PANCRS-FrequencyPositive": 3.00,
-    "PANCRS-FrequencyNegative": 2.60,
-    "PANCRS-TotalFrequency": 2.80,
+    "TIPI_Extraversion": 3.0,
+    "TIPI_Agreeableness": 5.5,
+    "TIPI_Conscientiousness": 4.0,
+    "TIPI_Neuroticism": 2.5,
+    "TIPI_Openness": 4.5,
+    "PANCRS_Affirmation": 4.00,
+    "PANCRS_ProblemSolving": 3.80,
+    "PANCRS_EnhancingFriendship": 4.00,
+    "PANCRS_TotalPositive": 3.80,
+    "PANCRS_WorryAboutEvaluation": 3.20,
+    "PANCRS_InhibitingHappiness": 3.00,
+    "PANCRS_WorryAboutImpact": 2.80,
+    "PANCRS_Slack": 2.40,
+    "PANCRS_TotalNegative": 2.80,
+    "PANCRS_FrequencyPositive": 3.00,
+    "PANCRS_FrequencyNegative": 2.60,
+    "PANCRS_TotalFrequency": 2.80,
   }
 }
 

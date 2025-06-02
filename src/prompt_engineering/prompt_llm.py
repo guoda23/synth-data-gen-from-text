@@ -24,11 +24,11 @@ def prompt_model(model: str,
         msg = prompt_openai_model(model=model,
                         prompt=prompt,
                         role=role)
-    elif 'mistral' in model:
-        msg = prompt_mistral_model(model=model,
-                         role=role,
-                         prompt=prompt)
-    elif model.startswith("deepseek/") or model.startswith("openai/") or model.startswith("microsoft/"):
+    # elif 'mistral' in model:
+    #     msg = prompt_mistral_model(model=model,
+    #                      role=role,
+    #                      prompt=prompt)
+    elif model.startswith("deepseek/") or model.startswith("openai/") or model.startswith("microsoft/") or model.startswith("mistral/"):
         msg = prompt_openrouter_model(model=model,
                                       prompt=prompt,
                                       role=role)
