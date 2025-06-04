@@ -17,7 +17,7 @@ PIPELINE_STEPS_TO_PERFORM = [
     # "evaluate_privacy"
 ]
 
-DATABASE = "wellconnect" #"adni" # ppmi2024 OR ppmi OR wellconnect
+DATABASE = "helius" #"adni" # ppmi2024 OR "ppmi" OR "wellconnect" OR "helius"
 RAW_SDG = "deepseek/deepseek-prover-v2:free" #"gpt-4-turbo" # gpt-4-turbo, ctgan, tvae, copula, mistral-large-largest, gpt-3.5-turbo
 # Create a filesystem‐friendly version
 SDG_MODEL = RAW_SDG
@@ -27,7 +27,7 @@ RANDOM_STATE = 1
 N_ROWS = 10
 N_SAMPLE = 100
 # name of prompt if GPT model OR name of database if standard SDG model
-PROMPT_ID = "wellconnect_prompt" #"adni_prompt" #"ppmi_prompt #"wellconnect_prompt"
+PROMPT_ID = "helius_prompt" #"adni_prompt" #"ppmi_prompt #"helius_prompt" #"wellconnect_prompt"
 DATE = (
     datetime.today().strftime("%Y-%m-%d")
 )
@@ -151,49 +151,93 @@ LIST_FTR_RM = []
 #             'WholeBrain_bl',
 #             'ICV_bl'
 #             ]
-            
-#list of features WellConnect
+
+#list of features Helius
 LIST_FTR = [
-    "PHQ9_q1",
-    "PHQ9_q2",
-    "PHQ9_q3",
-    "PHQ9_q4",
-    "PHQ9_q5",
-    "PHQ9_q6",
-    "PHQ9_q7",
-    "PHQ9_q8",
-    "PHQ9_q9",
-    "PHQ9_Total",
-    "Age",
-    "Sex",
-    "Gender",
-    "EducationLevel",
-    "CountryOfBirth",
-    "Nationality",
-    "CountryOfBirthMother",
-    "CountryOfBirthFather",
-    "Ethnicity",
-    "Religion",
-    "Postcode",
-    "EmploymentStatus",
-    "TIPI_Extraversion",
-    "TIPI_Agreeableness",
-    "TIPI_Conscientiousness",
-    "TIPI_Neuroticism",
-    "TIPI_Openness",
-    "PANCRS_Affirmation",
-    "PANCRS_ProblemSolving",
-    "PANCRS_EnhancingFriendship",
-    "PANCRS_TotalPositive",
-    "PANCRS_WorryAboutEvaluation",
-    "PANCRS_InhibitingHappiness",
-    "PANCRS_WorryAboutImpact",
-    "PANCRS_Slack",
-    "PANCRS_TotalNegative",
-    "PANCRS_FrequencyPositive",
-    "PANCRS_FrequencyNegative",
-    "PANCRS_TotalFrequency",
-]
+"questionnaire_completed",
+"physical_examination_completed",
+"date_physical_examination",
+"sex",
+"age",
+"migration_generation",
+"ethnicity",
+"ethnicity_surinamese_subgroups",
+"followup_time_helius1_helius2",
+"marital_status",
+"educational_level",
+"working_status",
+"occupational_level",
+"work_related_recovery_opportunities",
+"quality_of_life_sf12",
+"physical_activity_squash",
+"smoking_status",
+"smoking_packyears",
+"alcohol_use_past_12m_binary",
+"alcohol_use_past_12m_level",
+"body_weight_perception_scores",
+"health_literacy_sbs_scores",
+"health_literacy_realmd_scores",
+"perceived_discrimination",
+"cigarette_dependence_fagerstrom",
+"alcohol_dependence_audit",
+"lifetime_alcohol_dependence",
+"cannabis_dependence_cudit",
+"personality_extraversion_neo_ffi",
+"personality_neuroticism_neo_ffi",
+"dealing_with_everyday_problems_pearlin_schooler_mastery",
+"negative_life_events_nemesis",
+"psychological_stress_interheart",
+"childhood_experiences_nemesis",
+"ptss_problems_unpleasant_experiences",
+"depressive_symptoms_phq9",
+"lifetime_depression",
+"parental_psychological_history_nemesis",
+"social_support_ssq_satisfaction"]
+
+
+
+#list of features WellConnect
+# LIST_FTR = [
+#     "PHQ9_q1",
+#     "PHQ9_q2",
+#     "PHQ9_q3",
+#     "PHQ9_q4",
+#     "PHQ9_q5",
+#     "PHQ9_q6",
+#     "PHQ9_q7",
+#     "PHQ9_q8",
+#     "PHQ9_q9",
+#     "PHQ9_Total",
+#     "Age",
+#     "Sex",
+#     "Gender",
+#     "EducationLevel",
+#     "CountryOfBirth",
+#     "Nationality",
+#     "CountryOfBirthMother",
+#     "CountryOfBirthFather",
+#     "Ethnicity",
+#     "Religion",
+#     "Postcode",
+#     "EmploymentStatus",
+#     "TIPI_Extraversion",
+#     "TIPI_Agreeableness",
+#     "TIPI_Conscientiousness",
+#     "TIPI_Neuroticism",
+#     "TIPI_Openness",
+#     "PANCRS_Affirmation",
+#     "PANCRS_ProblemSolving",
+#     "PANCRS_EnhancingFriendship",
+#     "PANCRS_TotalPositive",
+#     "PANCRS_WorryAboutEvaluation",
+#     "PANCRS_InhibitingHappiness",
+#     "PANCRS_WorryAboutImpact",
+#     "PANCRS_Slack",
+#     "PANCRS_TotalNegative",
+#     "PANCRS_FrequencyPositive",
+#     "PANCRS_FrequencyNegative",
+#     "PANCRS_TotalFrequency",
+# ]
 
 
 
@@ -205,7 +249,8 @@ DATABASE_DESCRIPTION_DICT = {
     "ppmi": "PPMI Clinical database. The Parkinson's Progression Markers Initiative (PPMI) is an observational, international study designed to establish biomarker‐defined cohorts and identify clinical, imaging, genetic, and biospecimen Parkinson's disease (PD) progression markers to accelerate disease‐modifying therapeutic trials.",
     "ppmi2024": "PPMI Clinical database. The Parkinson's Progression Markers Initiative (PPMI) is an observational, international study designed to establish biomarker‐defined cohorts and identify clinical, imaging, genetic, and biospecimen Parkinson's disease (PD) progression markers to accelerate disease‐modifying therapeutic trials.",
     "adni": "ADNI data set. The Alzheimer's Disease Neuroimaging Initiative (ADNI) is an observational study designed to develop clinical, imaging, genetic, and biochemical biomarkers for the early detection and tracking of Alzheimer's disease (AD).",
-    "wellconnect": "WellConnect data set. WellConnect is a cohort study designed to investigate the effects of social connection on mildly to moderatrely depressed patients (PHQ-9 within 5 to 15) living in Amsterdam, the Netherlands."
+    "wellconnect": "WellConnect data set. WellConnect is a cohort study designed to investigate the effects of social connection on mildly to moderatrely depressed patients (PHQ-9 within 5 to 15) living in Amsterdam, the Netherlands.",
+    "helius": "HELIUS - – HEalthy Life In an Urban Setting – data set is a longitudinal study administered by the AMC and GGD Amsterdam in which a large spectrum of factors that could influence the health of the population of a multi-ethnic city is examined on a large scale. The study populations in HELIUS are Amsterdamers of Dutch, Surinamese, Turkish, Moroccan and Ghanaian descent. Thousands of people are being followed over time. The developments in health, healthcare use and wellbeing of the participants are being studied. Focal points are cardiovascular diseases, diabetes, psychological health and infectious diseases. More than one out of ten residents in our country is of non-Dutch descent and this number will increase. Large health differences exist between people from Dutch and non-western descent. "
 }
 
 DATABASE_DESCRIPTION = DATABASE_DESCRIPTION_DICT[DATABASE]
@@ -249,50 +294,96 @@ DATABASE_DESCRIPTION = DATABASE_DESCRIPTION_DICT[DATABASE]
 #   }
 # }
 
-#row example WellConnect
+# row example Helius
 ROW_EXAMPLE = {
-  "0": {
-    "PHQ9_q1": 1,
-    "PHQ9_q2": 2,
-    "PHQ9_q3": 1,
-    "PHQ9_q4": 2,
-    "PHQ9_q5": 1,
-    "PHQ9_q6": 2,
-    "PHQ9_q7": 1,
-    "PHQ9_q8": 1,
-    "PHQ9_q9": 1,
-    "PHQ9_Total": 12,
-    "Age": "18-24 jaar",
-    "Sex": "Vrouw",
-    "Gender": "Vrouw",
-    "EducationLevel": "HBO" ,
-    "CountryOfBirth": "Nederland",
-    "Nationality": "Nederlands",
-    "CountryOfBirthMother": "Marokko",
-    "CountryOfBirthFather": "Marokko",
-    "Ethnicity": "Marokkaans",
-    "Religion": "Islam",
-    "Postcode": "1104CA",
-    "EmploymentStatus": "Betaalde baan (fulltime)",
-    "TIPI_Extraversion": 3.0,
-    "TIPI_Agreeableness": 5.5,
-    "TIPI_Conscientiousness": 4.0,
-    "TIPI_Neuroticism": 2.5,
-    "TIPI_Openness": 4.5,
-    "PANCRS_Affirmation": 4.00,
-    "PANCRS_ProblemSolving": 3.80,
-    "PANCRS_EnhancingFriendship": 4.00,
-    "PANCRS_TotalPositive": 3.80,
-    "PANCRS_WorryAboutEvaluation": 3.20,
-    "PANCRS_InhibitingHappiness": 3.00,
-    "PANCRS_WorryAboutImpact": 2.80,
-    "PANCRS_Slack": 2.40,
-    "PANCRS_TotalNegative": 2.80,
-    "PANCRS_FrequencyPositive": 3.00,
-    "PANCRS_FrequencyNegative": 2.60,
-    "PANCRS_TotalFrequency": 2.80,
-  }
+    "0": {
+        "questionnaire_completed": "yes",
+        "physical_examination_completed": "yes",
+        "date_physical_examination": "2021-05-14",
+        "sex": "female",
+        "age": 52,
+        "migration_generation": "second",
+        "ethnicity": "Surinamese",
+        "ethnicity_surinamese_subgroups": "Creole",
+        "followup_time_helius1_helius2": 5.2,
+        "marital_status": "married",
+        "educational_level": "higher vocational",
+        "working_status": "employed",
+        "occupational_level": "skilled manual",
+        "work_related_recovery_opportunities": 3.8,
+        "quality_of_life_sf12": 48.7,
+        "physical_activity_squash": 1150,
+        "smoking_status": "ex-smoker",
+        "smoking_packyears": 12.5,
+        "alcohol_use_past_12m_binary": "yes",
+        "alcohol_use_past_12m_level": "moderate",
+        "body_weight_perception_scores": 2.4,
+        "health_literacy_sbs_scores": 28,
+        "health_literacy_realmd_scores": 62,
+        "perceived_discrimination": 7,
+        "cigarette_dependence_fagerstrom": 4,
+        "alcohol_dependence_audit": 5,
+        "lifetime_alcohol_dependence": "no",
+        "cannabis_dependence_cudit": 1,
+        "personality_extraversion_neo_ffi": 24,
+        "personality_neuroticism_neo_ffi": 18,
+        "dealing_with_everyday_problems_pearlin_schooler_mastery": 14,
+        "negative_life_events_nemesis": 3,
+        "psychological_stress_interheart": 2.1,
+        "childhood_experiences_nemesis": 4,
+        "ptss_problems_unpleasant_experiences": 1,
+        "depressive_symptoms_phq9": 6,
+        "lifetime_depression": "no",
+        "parental_psychological_history_nemesis": 1,
+        "social_support_ssq_satisfaction": 22
+    }
 }
+
+
+#row example WellConnect
+# ROW_EXAMPLE = {
+#   "0": {
+#     "PHQ9_q1": 1,
+#     "PHQ9_q2": 2,
+#     "PHQ9_q3": 1,
+#     "PHQ9_q4": 2,
+#     "PHQ9_q5": 1,
+#     "PHQ9_q6": 2,
+#     "PHQ9_q7": 1,
+#     "PHQ9_q8": 1,
+#     "PHQ9_q9": 1,
+#     "PHQ9_Total": 12,
+#     "Age": "18-24 jaar",
+#     "Sex": "Vrouw",
+#     "Gender": "Vrouw",
+#     "EducationLevel": "HBO" ,
+#     "CountryOfBirth": "Nederland",
+#     "Nationality": "Nederlands",
+#     "CountryOfBirthMother": "Marokko",
+#     "CountryOfBirthFather": "Marokko",
+#     "Ethnicity": "Marokkaans",
+#     "Religion": "Islam",
+#     "Postcode": "1104CA",
+#     "EmploymentStatus": "Betaalde baan (fulltime)",
+#     "TIPI_Extraversion": 3.0,
+#     "TIPI_Agreeableness": 5.5,
+#     "TIPI_Conscientiousness": 4.0,
+#     "TIPI_Neuroticism": 2.5,
+#     "TIPI_Openness": 4.5,
+#     "PANCRS_Affirmation": 4.00,
+#     "PANCRS_ProblemSolving": 3.80,
+#     "PANCRS_EnhancingFriendship": 4.00,
+#     "PANCRS_TotalPositive": 3.80,
+#     "PANCRS_WorryAboutEvaluation": 3.20,
+#     "PANCRS_InhibitingHappiness": 3.00,
+#     "PANCRS_WorryAboutImpact": 2.80,
+#     "PANCRS_Slack": 2.40,
+#     "PANCRS_TotalNegative": 2.80,
+#     "PANCRS_FrequencyPositive": 3.00,
+#     "PANCRS_FrequencyNegative": 2.60,
+#     "PANCRS_TotalFrequency": 2.80,
+#   }
+# }
 
 # TEXT2TAB #
 # mapping of {prompt_id: prompt info}
@@ -342,6 +433,23 @@ Here is an example for one patient with the associated key of the dictionary to 
     }, 
     "wellconnect_prompt": { 
         "prompt": f"""Give an example table of {N_ROWS} rows from {DATABASE_DESCRIPTION} Only consider patients with mild to moderate depression (PHQ-9 score between 5 and 15) and only individuals from Amsterdam, the Netherlands. 
+        The table must have one row by patient, no missing values and include all the following columns:
+{COL_PTID}: patient unique identifier, string""" + """
+{variables_description}
+Return the table as a dictionary in JSON format with keys as index. JSON format strictly requires double quotes for strings. The column names need to be the same as those provided.
+Only return the dictionary, do not repeat the question, introduce your answer or comment on it. Do not truncate the table, provide all the rows.
+
+Here is an example for one patient with the associated key of the dictionary to output:
+{row_example}
+""",
+        "is_template": True,
+        "template_items": ["variables_description", "row_example"], 
+        "enrichment_strategy": None,
+        "text2stats_prompt_id": None,
+        "input_stats_prompt_id": None,
+    },
+    "helius_prompt": { 
+        "prompt": f"""Give an example table of {N_ROWS} rows from {DATABASE_DESCRIPTION} Only consider individuals from Amsterdam, the Netherlands. 
         The table must have one row by patient, no missing values and include all the following columns:
 {COL_PTID}: patient unique identifier, string""" + """
 {variables_description}

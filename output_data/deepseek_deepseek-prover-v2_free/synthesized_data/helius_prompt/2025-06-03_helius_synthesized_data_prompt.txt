@@ -1,0 +1,47 @@
+Give an example table of 10 rows from HELIUS - – HEalthy Life In an Urban Setting – data set is a longitudinal study administered by the AMC and GGD Amsterdam in which a large spectrum of factors that could influence the health of the population of a multi-ethnic city is examined on a large scale. The study populations in HELIUS are Amsterdamers of Dutch, Surinamese, Turkish, Moroccan and Ghanaian descent. Thousands of people are being followed over time. The developments in health, healthcare use and wellbeing of the participants are being studied. Focal points are cardiovascular diseases, diabetes, psychological health and infectious diseases. More than one out of ten residents in our country is of non-Dutch descent and this number will increase. Large health differences exist between people from Dutch and non-western descent.  Only consider individuals from Amsterdam, the Netherlands. 
+        The table must have one row by patient, no missing values and include all the following columns:
+PTID: patient unique identifier, string
+health_literacy_sbs_scores: Health literacy scores (SBS-Questionnaire)|numeric|| 
+parental_psychological_history_nemesis: Parental psychological history (NEMESIS)|numeric|| 
+questionnaire_completed: Questionnaire completed (only available at baseline)|boolean|yes, no| 
+ethnicity: Ethnicity (based on countries of birth of participant and his/her parents: Dutch, Surinamese, Ghanaian, Turkish, Moroccan)|categorical|Dutch, Surinamese, Ghanaian, Turkish, Moroccan| 
+age: Age|numeric|| 
+perceived_discrimination: Perceived discrimination (score Everyday Discrimination scale)|numeric|| 
+cannabis_dependence_cudit: Cannabis dependence (score CUDIT)|numeric|| 
+physical_examination_completed: Physical examination completed|boolean|yes, no| 
+lifetime_depression: Lifetime depression|boolean|yes, no| 
+working_status: Working status (4 categories)|categorical|| 
+negative_life_events_nemesis: Negative life events (List of threatening experiences, NEMESIS questionnaire)|numeric|| 
+work_related_recovery_opportunities: Work-related recovery opportunities|numeric|| 
+body_weight_perception_scores: Body weight perception scores|numeric|| 
+health_literacy_realmd_scores: Health literacy scores (REALM-D test, among subsample n~9700)|numeric|| 
+depressive_symptoms_phq9: Depressive symptoms (PHQ-9)|numeric|| 
+childhood_experiences_nemesis: Experiences during childhood (Childhood trauma; NEMESIS questionnaire)|numeric|numeric| 
+alcohol_use_past_12m_level: Alcohol use in past 12 months (low, moderate, high)|categorical|low, moderate, high| 
+social_support_ssq_satisfaction: Social support (scores Social Support Questionnaire for Satisfaction — Daily Emotional Support Subscale)|numeric|| 
+lifetime_alcohol_dependence: Lifetime alcohol dependence|boolean|yes, no| 
+personality_extraversion_neo_ffi: Personality: extraversion (score NEO-Five Factor Inventory)|numeric|| 
+physical_activity_squash: Physical activity (obtained by SQUASH questionnaire)|numeric|| 
+marital_status: Marital status (5 categories)|categorical|| 
+alcohol_dependence_audit: Alcohol dependence (score AUDIT)|numeric|| 
+sex: Sex|categorical|male, female| 
+date_physical_examination: Date of physical examination|date|| 
+migration_generation: Migration generation (based on countries of birth of participants and parents)|categorical|| 
+psychological_stress_interheart: Psychological stress (at work and at home) (INTERHEART questionnaire)|numeric|| 
+ptss_problems_unpleasant_experiences: Problems because of unpleasant experiences (Post-traumatic stress disorder)|numeric|| 
+personality_neuroticism_neo_ffi: Personality: neuroticism (score NEO-Five Factor Inventory)|numeric|| 
+ethnicity_surinamese_subgroups: Ethnicity including Surinamese subgroups|categorical|| 
+followup_time_helius1_helius2: Follow-up time between HELIUS-1 and HELIUS-2|numeric|| 
+dealing_with_everyday_problems_pearlin_schooler_mastery: Dealing with everyday problems (score Pearlin-Schooler mastery scale)|numeric|| 
+smoking_status: Smoking status|categorical|yes, no, ex-smoker| 
+occupational_level: Occupational level (5 categories)|categorical|| 
+alcohol_use_past_12m_binary: Alcohol use in past 12 months (yes/no)|boolean|yes, no| 
+cigarette_dependence_fagerstrom: Cigarette dependence (score Fagerström)|numeric|| 
+educational_level: Educational level (highest education obtained, either in Netherlands or country of origin, 4 categories)|categorical|| 
+smoking_packyears: Smoking (packyears)|numeric|| 
+quality_of_life_sf12: Quality of life (SF-12, Physical and Mental Component Scores)|numeric|| 
+Return the table as a dictionary in JSON format with keys as index. JSON format strictly requires double quotes for strings. The column names need to be the same as those provided.
+Only return the dictionary, do not repeat the question, introduce your answer or comment on it. Do not truncate the table, provide all the rows.
+
+Here is an example for one patient with the associated key of the dictionary to output:
+{'0': {'questionnaire_completed': 'yes', 'physical_examination_completed': 'yes', 'date_physical_examination': '2021-05-14', 'sex': 'female', 'age': 52, 'migration_generation': 'second', 'ethnicity': 'Surinamese', 'ethnicity_surinamese_subgroups': 'Creole', 'followup_time_helius1_helius2': 5.2, 'marital_status': 'married', 'educational_level': 'higher vocational', 'working_status': 'employed', 'occupational_level': 'skilled manual', 'work_related_recovery_opportunities': 3.8, 'quality_of_life_sf12': 48.7, 'physical_activity_squash': 1150, 'smoking_status': 'ex-smoker', 'smoking_packyears': 12.5, 'alcohol_use_past_12m_binary': 'yes', 'alcohol_use_past_12m_level': 'moderate', 'body_weight_perception_scores': 2.4, 'health_literacy_sbs_scores': 28, 'health_literacy_realmd_scores': 62, 'perceived_discrimination': 7, 'cigarette_dependence_fagerstrom': 4, 'alcohol_dependence_audit': 5, 'lifetime_alcohol_dependence': 'no', 'cannabis_dependence_cudit': 1, 'personality_extraversion_neo_ffi': 24, 'personality_neuroticism_neo_ffi': 18, 'dealing_with_everyday_problems_pearlin_schooler_mastery': 14, 'negative_life_events_nemesis': 3, 'psychological_stress_interheart': 2.1, 'childhood_experiences_nemesis': 4, 'ptss_problems_unpleasant_experiences': 1, 'depressive_symptoms_phq9': 6, 'lifetime_depression': 'no', 'parental_psychological_history_nemesis': 1, 'social_support_ssq_satisfaction': 22}}

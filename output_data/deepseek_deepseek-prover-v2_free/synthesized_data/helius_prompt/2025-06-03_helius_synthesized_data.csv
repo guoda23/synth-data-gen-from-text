@@ -1,0 +1,101 @@
+questionnaire_completed,physical_examination_completed,date_physical_examination,sex,age,migration_generation,ethnicity,ethnicity_surinamese_subgroups,followup_time_helius1_helius2,marital_status,educational_level,working_status,occupational_level,work_related_recovery_opportunities,quality_of_life_sf12,physical_activity_squash,smoking_status,smoking_packyears,alcohol_use_past_12m_binary,alcohol_use_past_12m_level,body_weight_perception_scores,health_literacy_sbs_scores,health_literacy_realmd_scores,perceived_discrimination,cigarette_dependence_fagerstrom,alcohol_dependence_audit,lifetime_alcohol_dependence,cannabis_dependence_cudit,personality_extraversion_neo_ffi,personality_neuroticism_neo_ffi,dealing_with_everyday_problems_pearlin_schooler_mastery,negative_life_events_nemesis,psychological_stress_interheart,childhood_experiences_nemesis,ptss_problems_unpleasant_experiences,depressive_symptoms_phq9,lifetime_depression,parental_psychological_history_nemesis,social_support_ssq_satisfaction
+yes,yes,2021-05-14,female,52,second,Surinamese,Creole,5.2,married,higher vocational,employed,skilled manual,3.8,48.7,1150,ex-smoker,12.5,yes,moderate,2.4,28,62,7,4.0,5,no,1,24,18,14,3,2.1,4,1,6,no,1,22
+yes,yes,2021-06-15,male,46,first,Ghanaian,N/A,4.8,single,university,self-employed,professional,4.2,55.2,980,yes,8.4,yes,high,1.9,32,68,6,7.0,14,yes,5,27,16,17,2,1.8,3,2,4,no,0,26
+yes,yes,2021-07-19,female,39,first,Turkish,N/A,4.3,married,secondary,employed,elementary,2.9,43.6,630,no,0.0,no,low,3.1,25,58,9,0.0,3,no,0,20,22,12,5,3.3,6,0,10,yes,2,18
+yes,yes,2021-08-21,male,58,first,Dutch,N/A,5.1,widowed,lower vocational,retired,skilled manual,1.5,38.4,520,ex-smoker,22.1,yes,moderate,2.7,21,48,4,8.0,8,no,3,22,20,11,4,2.7,5,3,9,yes,3,14
+yes,yes,2021-09-13,female,28,second,Moroccan,N/A,4.9,married,intermediate vocational,employed,skilled manual,3.5,50.8,780,no,0.0,no,low,2.0,27,60,8,0.0,2,no,2,26,17,18,1,1.5,2,2,5,no,0,24
+yes,yes,2021-10-15,male,35,first,Surinamese,Hindustani,4.6,divorced,intermediate vocational,unemployed,elementary,2.0,40.2,480,yes,6.7,yes,high,2.8,23,55,5,6.0,16,yes,4,23,19,13,4,3.0,7,4,12,yes,4,20
+yes,yes,2021-11-18,female,42,second,Turkish,N/A,5.0,married,higher vocational,employed,professional,4.0,53.6,890,no,0.3,yes,moderate,2.1,30,65,7,2.0,9,no,0,25,15,20,2,2.4,4,1,7,no,1,28
+yes,yes,2021-12-20,male,33,first,Ghanaian,N/A,4.7,single,university,employed,professional,4.5,56.7,1050,no,0.0,yes,high,1.7,33,70,3,0.0,18,yes,3,29,14,22,1,1.2,1,0,2,no,0,30
+yes,yes,2022-01-22,female,29,second,Moroccan,N/A,5.3,married,university,employed,professional,4.7,57.4,1220,no,0.0,no,low,1.5,35,72,2,0.0,1,no,0,30,13,24,0,1.0,0,0,1,no,0,32
+yes,yes,2022-02-25,male,36,first,Dutch,N/A,5.5,single,higher vocational,self-employed,professional,4.8,58.2,1350,ex-smoker,5.6,yes,high,1.6,37,75,1,3.0,17,no,2,31,12,26,0,0.8,0,0,0,no,0,34
+yes,yes,2021-05-14,female,52,second,Surinamese,Creole,5.2,married,higher vocational,employed,skilled manual,3.8,48.7,1150,ex-smoker,12.5,yes,moderate,2.4,28,62,7,4.0,5,no,1,24,18,14,3,2.1,4,1,6,no,1,22
+yes,yes,2017-08-22,male,45,first,Dutch,-,3.4,single,university,employed,high professional,4.2,52.3,800,no,0.0,yes,low,1.8,32,66,3,0.0,4,no,0,29,10,19,1,1.5,2,0,3,no,0,25
+yes,yes,2016-11-05,male,38,second,Moroccan,-,2.8,married,secondary vocational,employed,skilled manual,2.7,46.5,950,yes,10.3,no,-,2.9,24,45,12,6.0,0,no,0,22,25,12,4,3.3,6,2,9,no,2,18
+yes,yes,2018-04-16,female,50,first,Turkish,-,4.1,divorced,primary,homemaker,-,1.5,42.1,600,yes,15.2,no,-,3.2,20,38,15,8.0,0,no,0,19,30,10,5,4.5,5,4,12,yes,3,14
+yes,yes,2019-09-10,female,29,second,Surinamese,Hindustani,1.5,single,higher vocational,employed,higher professional,4.0,49.8,1100,no,0.0,yes,low,2.1,30,64,9,0.0,2,no,0,26,21,17,2,1.2,3,1,4,no,1,27
+yes,yes,2017-10-19,male,35,first,Ghanaian,-,3.1,married,secondary vocational,employed,skilled manual,3.4,48.2,1050,yes,5.6,no,-,2.3,26,58,10,5.0,0,no,0,23,27,16,6,3.5,7,3,8,no,2,20
+yes,yes,2018-05-06,female,41,second,Dutch,-,4.0,single,university,employed,high professional,4.1,50.6,1250,no,0.0,yes,moderate,1.9,31,65,6,0.0,3,no,0,28,19,18,2,1.1,2,1,5,no,1,26
+yes,yes,2017-12-15,male,47,first,Turkish,-,3.2,married,secondary vocational,employed,skilled manual,3.0,45.7,700,yes,14.8,no,-,3.0,23,48,11,7.0,0,no,0,21,29,11,3,3.8,3,2,7,yes,3,16
+yes,yes,2016-02-23,female,33,second,Moroccan,-,5.7,single,higher vocational,employed,higher professional,3.9,47.9,1000,no,0.0,yes,low,2.0,29,63,8,0.0,1,no,0,27,23,20,1,0.9,1,0,2,no,0,29
+yes,yes,2015-10-04,male,57,first,Ghanaian,-,6.4,married,primary,unemployed,-,2.1,43.0,550,yes,20.1,no,-,3.5,18,39,14,9.0,0,no,0,20,31,8,7,4.7,4,5,10,yes,4,12
+yes,yes,2021-05-14,female,52,second,Surinamese,Creole,5.2,married,higher vocational,employed,skilled manual,3.8,48.7,1150,ex-smoker,12.5,yes,moderate,2.4,28,62,7,4.0,5,no,1,24,18,14,3,2.1,4,1,6,no,1,22
+yes,yes,2021-08-22,male,45,first,Moroccan,NA,4.9,married,university,self-employed,professional,4.2,52.1,2100,no,0.0,no,low,3.1,32,64,5,0.0,1,no,0,27,16,16,1,1.5,2,0,3,no,0,25
+yes,no,NA,female,36,second,Ghanaian,NA,6.1,single,lower vocational,unemployed,unskilled,1.3,35.8,800,yes,8.2,yes,high,1.9,25,55,9,7.0,16,yes,3,19,22,11,4,3.2,6,2,11,yes,2,18
+yes,yes,2021-11-05,male,60,first,Dutch,NA,3.7,widowed,intermediate vocational,retired,semi-skilled,4.5,58.4,1600,ex-smoker,20.1,yes,moderate,2.8,31,66,3,3.0,4,no,0,26,17,15,2,1.8,1,0,2,no,0,27
+yes,yes,2021-07-18,female,41,first,Turkish,NA,4.4,married,lower vocational,employed,skilled manual,3.1,49.2,950,ex-smoker,15.3,yes,high,2.2,27,58,8,2.0,9,no,1,23,20,13,4,2.4,3,3,7,yes,1,20
+yes,no,NA,male,50,second,Surinamese,Hindustani,5.6,divorced,upper secondary,employed,semi-skilled,4.0,51.6,1200,no,0.0,no,low,3.4,33,68,6,0.0,3,no,0,25,15,17,1,1.6,2,0,4,no,0,24
+yes,yes,2021-09-30,female,29,second,Surinamese,Javanese,4.2,single,university,employed,professional,5.1,54.5,2000,no,0.0,no,low,3.2,35,70,4,0.0,2,no,0,28,14,18,0,0.9,1,0,1,no,0,27
+yes,yes,2021-06-12,male,55,first,Turkish,NA,5.8,married,intermediate vocational,self-employed,skilled manual,3.6,47.9,1300,yes,25.7,yes,moderate,2.6,29,60,6,8.0,7,yes,1,21,19,12,5,3.1,4,4,10,yes,2,19
+yes,yes,2021-08-26,female,40,first,Moroccan,NA,4.6,married,lower vocational,employed,unskilled,2.8,46.3,750,yes,11.2,no,low,2.1,26,54,7,6.0,2,no,2,22,21,9,3,2.7,5,5,12,yes,1,17
+yes,no,NA,female,38,first,Ghanaian,NA,6.0,single,upper secondary,unemployed,unskilled,1.5,34.7,600,no,0.0,no,low,1.7,24,52,10,0.0,1,no,0,20,23,8,6,3.8,7,6,15,yes,3,16
+yes,yes,2021-05-14,female,52,second,Surinamese,Creole,5.2,married,higher vocational,employed,skilled manual,3.8,48.7,1150,ex-smoker,12.5,yes,moderate,2.4,28,62,7,4.0,5,no,1,24,18,14,3,2.1,4,1,6,no,1,22
+yes,yes,2019-06-17,female,45,second,Dutch,,6.5,married,higher vocational,employed,skilled manual,3.2,40.5,900,ex-smoker,8.3,yes,moderate,3.1,30,60,2,0.0,3,no,0,22,16,12,1,1.3,3,3,5,no,0,27
+yes,yes,2020-08-21,male,54,first,Ghanaian,,5.8,married,intermediate vocational,employed,skilled manual,2.9,44.3,1100,no,0.0,no,low,1.5,22,55,1,0.0,1,no,0,19,14,10,2,1.9,2,2,4,no,0,25
+yes,no,,male,60,first,Turkish,,7.2,married,lower vocational,unemployed,unskilled manual,1.8,38.2,800,yes,20.6,no,low,2.8,24,58,5,7.0,1,no,0,20,15,9,3,2.7,1,4,7,no,0,20
+yes,yes,2021-03-12,female,48,second,Moroccan,,6.1,married,higher vocational,employed,skilled manual,3.6,41.7,950,no,0.0,yes,moderate,2.1,26,59,4,0.0,4,no,0,22,15,13,2,1.8,2,1,5,no,0,26
+yes,yes,2022-01-22,male,57,first,Surinamese,Creole,6.9,married,intermediate vocational,employed,skilled manual,3.3,43.2,1050,ex-smoker,11.2,yes,high,3.2,29,61,3,0.0,7,no,0,24,16,15,1,1.9,1,2,4,no,0,27
+yes,yes,2021-05-14,female,52,second,Surinamese,Creole,5.2,married,higher vocational,employed,skilled manual,3.8,48.7,1150,ex-smoker,12.5,yes,moderate,2.4,28,62,7,4.0,5,no,1,24,18,14,3,2.1,4,1,6,no,1,22
+yes,yes,2020-11-06,male,63,first,Moroccan,,6.4,married,higher vocational,retired,skilled manual,2.7,40.1,890,ex-smoker,18.7,no,low,3.2,30,60,6,0.0,1,no,0,23,17,16,2,1.9,3,3,6,no,0,25
+yes,no,,female,59,second,Turkish,,7.5,married,lower vocational,unemployed,unskilled manual,1.6,39.2,780,no,0.0,no,low,1.9,25,57,3,0.0,1,no,0,21,14,10,1,1.7,2,2,5,no,0,22
+yes,yes,2022-04-15,male,61,first,Ghanaian,,6.8,married,higher vocational,employed,skilled manual,3.4,42.5,980,ex-smoker,15.2,yes,moderate,2.9,27,59,5,0.0,4,no,0,23,16,14,2,2.3,3,2,5,no,0,24
+yes,yes,2017-09-23,female,49,second,Dutch,,4.8,married,higher vocational,employed,skilled manual,3.7,43.8,1020,no,0.0,yes,low,1.8,28,61,1,0.0,2,no,0,20,13,11,1,1.6,2,1,4,no,0,23
+yes,yes,2021-05-14,female,52,second,Surinamese,Creole,5.2,married,higher vocational,employed,skilled manual,3.8,48.7,1150,ex-smoker,12.5,yes,moderate,2.4,28,62,7,4.0,5,no,1,24,18,14,3,2.1,4,1,6,no,1,22
+yes,yes,2021-07-23,male,34,first,Ghanaian,N/A,4.7,single,secondary,employed,professional,4.1,52.3,935,no,0.0,yes,low,2.1,27,57,6,0.0,3,no,0,21,12,15,2,1.9,3,0,4,no,0,24
+yes,yes,2022-01-18,male,45,second,Turkish,N/A,3.9,married,higher vocational,self-employed,skilled non-manual,3.5,47.8,820,yes,27.0,no,low,3.2,25,59,8,7.0,2,no,2,19,16,13,4,2.3,5,2,8,yes,1,19
+yes,yes,2020-11-05,female,38,first,Moroccan,N/A,4.2,married,secondary,employed,skilled manual,3.2,49.1,1120,no,0.0,no,low,2.6,22,55,5,0.0,1,no,0,22,15,16,3,1.7,2,0,5,no,0,21
+yes,yes,2021-09-09,female,50,second,Surinamese,Hindustani,4.8,divorced,primary,unemployed,non-skilled manual,2.7,46.5,670,yes,40.0,no,low,4.1,18,48,12,9.0,6,no,3,16,22,10,7,2.9,6,3,12,yes,1,18
+yes,yes,2021-03-22,male,29,first,Dutch,N/A,5.5,married,university,employed,professional,4.5,53.4,1320,no,0.0,yes,high,3.1,32,70,3,0.0,12,no,1,26,14,18,1,1.2,1,0,3,no,0,27
+yes,yes,2021-12-14,female,47,second,Turkish,N/A,4.1,widowed,higher vocational,employed,skilled non-manual,3.7,48.2,890,no,0.0,no,low,2.9,24,60,6,0.0,2,no,1,20,17,12,3,2.0,4,2,7,no,0,20
+yes,yes,2020-10-19,male,58,first,Moroccan,N/A,5.3,married,secondary,employed,skilled manual,3.4,47.3,980,ex-smoker,18.0,yes,moderate,3.7,23,56,9,6.0,7,no,2,17,21,11,6,2.6,7,4,9,no,1,17
+yes,yes,2021-08-30,female,43,second,Surinamese,Maroon,4.4,divorced,university,employed,skilled non-manual,4.0,48.9,1010,no,0.0,yes,low,3.2,30,65,5,0.0,4,no,0,23,13,19,2,1.8,3,1,5,no,0,25
+yes,yes,2022-02-17,male,50,first,Ghanaian,N/A,3.6,married,secondary,unemployed,skilled manual,2.3,46.8,720,ex-smoker,15.0,no,low,4.3,19,52,11,5.0,6,no,4,15,24,9,8,3.2,8,5,14,yes,1,16
+yes,yes,2021-05-14,female,52,second,Surinamese,Creole,5.2,married,higher vocational,employed,skilled manual,3.8,48.7,1150,ex-smoker,12.5,yes,moderate,2.4,28,62,7,4.0,5,no,1,24,18,14,3,2.1,4,1,6,no,1,22
+yes,yes,2022-05-08,male,51,second,Surinamese,Hindustani,5.0,divorced,secondary,unemployed,unskilled,2.1,38.1,620,yes,25.6,yes,high,4.8,19,50,10,8.0,15,yes,1,19,26,9,7,3.2,6,3,15,yes,3,18
+yes,yes,2021-05-14,female,52,second,Surinamese,Creole,5.2,married,higher vocational,employed,skilled manual,3.8,48.7,1150,ex-smoker,12.5,yes,moderate,2.4,28,62,7,4.0,5,no,1,24,18,14,3,2.1,4,1,6,no,1,22
+yes,yes,2021-05-14,female,52,second,Surinamese,Creole,5.2,married,higher vocational,employed,skilled manual,3.8,48.7,1150,ex-smoker,12.5,yes,moderate,2.4,28,62,7,4.0,5,no,1,24,18,14,3,2.1,4,1,6,no,1,22
+yes,yes,2021-03-15,male,53,second,Surinamese,Hindustani,5.6,married,higher vocational,employed,skilled non-manual,3.9,53.1,1200,ex-smoker,10.0,yes,moderate,1.9,29,63,10,0.0,7,no,1,22,18,16,4,2.6,3,2,11,yes,2,22
+yes,yes,2021-05-14,female,52,second,Surinamese,Creole,5.2,married,higher vocational,employed,skilled manual,3.8,48.7,1150,ex-smoker,12.5,yes,moderate,2.4,28,62,7,4.0,5,no,1,24,18,14,3,2.1,4,1,6,no,1,22
+yes,no,2021-09-27,male,38,first,Turkish,NA,4.8,married,intermediate vocational,employed,skilled manual,3.5,45.2,980,yes,19.5,no,low,3.2,25,58,12,7.0,2,no,0,18,23,12,5,3.3,6,4,10,yes,0,18
+yes,yes,2021-03-15,male,45,first,Moroccan,NA,5.1,married,lower vocational,employed,unskilled manual,2.9,41.3,870,no,0.0,no,low,3.8,22,48,15,0.0,1,no,0,20,21,11,7,4.1,5,3,8,yes,0,16
+yes,yes,2021-07-22,female,50,second,Dutch,NA,5.4,married,higher vocational,employed,professional,4.5,52.6,1400,ex-smoker,15.0,yes,high,1.9,35,72,4,5.0,7,yes,2,28,14,16,2,1.8,3,1,5,no,1,24
+yes,yes,2021-02-18,female,47,first,Ghanaian,NA,5.0,single,lower vocational,unemployed,other,1.2,39.6,750,no,0.0,no,low,4.1,18,42,20,0.0,1,no,0,16,25,9,8,4.8,7,5,12,yes,0,13
+yes,no,2021-11-05,male,55,second,Surinamese,Hindustani,4.7,married,intermediate vocational,retired,skilled manual,1.5,43.7,920,ex-smoker,22.0,yes,moderate,2.7,30,65,9,3.0,4,no,1,22,19,13,4,2.3,3,2,7,no,0,20
+yes,yes,2021-04-30,female,41,second,Dutch,NA,5.5,single,higher vocational,employed,professional,4.7,51.8,1300,no,0.0,yes,high,1.8,34,70,3,0.0,6,yes,1,27,16,15,1,2.0,2,1,4,no,1,23
+yes,yes,2021-10-19,male,48,first,Moroccan,NA,4.9,married,lower vocational,employed,unskilled manual,3.0,42.5,840,yes,17.5,no,low,3.6,21,47,14,6.0,2,no,0,19,22,12,6,3.6,6,4,9,yes,0,15
+yes,no,2021-08-12,male,57,second,Surinamese,Creole,4.6,divorced,intermediate vocational,retired,skilled manual,1.8,44.4,960,no,0.0,yes,moderate,2.6,29,63,10,0.0,4,no,1,21,20,14,3,2.5,4,2,5,no,0,19
+yes,yes,2021-12-30,female,60,second,Dutch,NA,4.4,married,higher vocational,retired,professional,2.0,47.2,1100,ex-smoker,25.0,yes,moderate,2.2,32,67,5,3.0,3,no,0,25,17,16,2,1.7,1,0,3,no,1,21
+yes,yes,2012-05-14,male,45,first,Turkish,,5.5,married,lower vocational,employed,unskilled manual,2.9,42.3,850,yes,15.2,yes,high,3.1,25,55,9,6.0,8,yes,2,26,20,12,4,2.5,5,2,7,yes,2,20
+yes,yes,2012-06-18,female,38,first,Ghanaian,,4.8,single,university,unemployed,,4.2,53.4,1200,no,0.0,no,low,1.8,31,65,5,0.0,3,no,0,29,16,16,2,1.8,3,0,4,no,0,25
+yes,yes,2011-11-22,male,51,second,Moroccan,,6.1,divorced,higher vocational,employed,skilled non-manual,3.5,47.8,980,ex-smoker,8.4,yes,moderate,2.5,26,58,6,3.0,4,no,1,27,19,15,3,2.2,4,1,5,no,1,23
+yes,yes,2012-02-15,female,57,first,Surinamese,Hindustani,4.9,married,university,employed,managerial,4.5,52.1,1250,no,0.0,yes,low,2.1,29,60,4,0.0,2,no,0,25,17,13,2,1.9,3,0,3,no,0,24
+yes,yes,2011-12-05,male,49,second,Dutch,,5.7,single,higher vocational,employed,skilled non-manual,3.9,49.2,1180,no,0.0,yes,moderate,2.3,27,61,3,0.0,4,no,0,28,18,14,3,2.0,2,1,4,no,0,22
+yes,yes,2012-03-26,female,43,first,Turkish,,5.0,married,secondary,unemployed,unskilled manual,2.8,41.5,860,yes,16.3,no,low,3.2,24,54,8,7.0,6,no,1,23,21,11,4,2.4,5,2,9,yes,2,19
+yes,yes,2012-01-10,male,54,second,Dutch,,5.3,married,university,employed,skilled non-manual,4.1,50.3,1120,ex-smoker,10.8,yes,high,2.6,30,63,5,5.0,7,no,0,30,15,17,2,1.7,1,0,2,no,0,26
+yes,yes,2012-04-30,female,46,first,Ghanaian,,4.6,single,secondary,unemployed,,2.6,40.7,820,no,0.0,no,low,3.4,23,52,10,0.0,3,no,2,22,22,10,5,2.6,6,3,11,yes,3,18
+yes,yes,2011-10-19,male,58,second,Moroccan,,6.2,married,higher vocational,employed,skilled manual,3.6,47.5,950,yes,13.7,yes,moderate,2.7,25,57,7,4.0,5,no,1,26,20,14,3,2.3,3,1,5,no,1,23
+yes,yes,2012-07-20,female,39,first,Surinamese,Creole,4.5,married,higher vocational,employed,skilled non-manual,4.3,51.6,1230,no,0.0,yes,low,2.2,28,59,5,0.0,3,no,0,24,16,13,2,1.8,2,0,3,no,0,25
+yes,yes,2021-05-14,female,52,second,Surinamese,Creole,5.2,married,higher vocational,employed,skilled manual,3.8,48.7,1150,ex-smoker,12.5,yes,moderate,2.4,28,62,7,4.0,5,no,1,24,18,14,3,2.1,4,1,6,no,1,22
+yes,yes,2020-09-23,male,47,second,Surinamese,Hindustan,2.9,married,higher vocational,employed,skilled manual,3.6,49.2,1050,no,0.0,yes,moderate,2.6,30,65,4,0.0,6,no,1,20,17,16,2,1.9,0,0,5,no,0,26
+yes,yes,2017-03-22,male,50,second,Surinamese,Creole,7.1,married,higher vocational,employed,skilled manual,3.9,46.8,1100,yes,30.0,yes,high,1.7,28,61,5,7.0,14,yes,3,17,22,13,4,3.5,5,4,12,yes,1,21
+yes,yes,2021-05-14,female,52,second,Surinamese,Creole,5.2,married,higher vocational,employed,skilled manual,3.8,48.7,1150,ex-smoker,12.5,yes,moderate,2.4,28,62,7,4.0,5,no,1,24,18,14,3,2.1,4,1,6,no,1,22
+yes,yes,2021-05-14,female,52,second,Surinamese,Creole,5.2,married,higher vocational,employed,skilled manual,3.8,48.7,1150,ex-smoker,12.5,yes,moderate,2.4,28,62,7,4.0,5,no,1,24,18,14,3,2.1,4,1,6,no,1,22
+yes,yes,2021-05-14,female,52,second,Surinamese,Creole,5.2,married,higher vocational,employed,skilled manual,3.8,48.7,1150,ex-smoker,12.5,yes,moderate,2.4,28,62,7,4.0,5,no,1,24,18,14,3,2.1,4,1,6,no,1,22
+yes,yes,2021-02-19,male,48,first,Moroccan,N/A,6.1,single,vocational,self-employed,skilled non-manual,4.2,46.3,980,no,0.0,no,low,1.6,25,58,5,0.0,2,no,0,22,20,16,2,1.9,3,0,4,no,0,21
+yes,yes,2021-03-25,male,55,second,Turkish,N/A,5.8,divorced,university,employed,professional,4.5,52.1,1530,yes,21.7,yes,high,3.0,32,65,8,6.0,8,yes,0,28,16,18,4,2.3,5,2,7,yes,1,24
+yes,yes,2021-06-18,female,39,first,Ghanaian,N/A,5.0,married,high school,employed,skilled manual,3.5,50.2,1350,no,0.0,no,low,1.8,24,55,6,0.0,3,no,0,23,17,16,3,2.0,2,1,5,no,0,20
+yes,yes,2021-04-21,female,50,second,Dutch,N/A,5.5,widowed,university,unemployed,professional,4.0,49.5,1100,ex-smoker,18.3,yes,moderate,2.1,27,60,4,3.0,4,no,0,25,19,15,2,2.2,3,1,6,no,1,19
+yes,yes,2021-05-29,male,44,first,Turkish,N/A,6.0,married,vocational,employed,skilled non-manual,4.1,47.8,1250,ex-smoker,14.7,yes,moderate,2.0,25,56,7,5.0,6,no,2,26,17,14,3,2.5,4,2,8,no,1,23
+yes,yes,2021-03-17,male,58,second,Moroccan,N/A,5.9,divorced,university,self-employed,professional,4.3,51.4,1400,no,0.0,yes,high,2.7,31,63,5,0.0,7,yes,0,27,15,16,2,2.4,3,1,6,no,0,22
+yes,yes,2021-04-11,female,42,first,Surinamese,Hindustani,6.2,single,university,employed,professional,4.4,49.1,1300,no,0.0,no,low,1.9,26,57,6,0.0,3,no,1,24,18,15,2,1.8,4,0,5,no,0,21
+yes,yes,2021-05-22,male,60,first,Ghanaian,N/A,5.7,married,vocational,employed,skilled manual,3.7,50.6,1200,yes,26.3,yes,high,2.5,28,59,8,6.0,8,yes,0,25,16,17,4,2.6,5,2,7,yes,1,24
+yes,yes,2021-06-28,female,37,first,Dutch,N/A,5.1,single,university,employed,professional,4.6,52.5,1650,no,0.0,no,low,1.7,30,61,4,0.0,2,no,0,29,14,19,1,1.7,1,0,3,no,0,25
+yes,yes,2021-05-14,female,52,second,Surinamese,Creole,5.2,married,higher vocational,employed,skilled manual,3.8,48.7,1150,ex-smoker,12.5,yes,moderate,2.4,28,62,7,4.0,5,no,1,24,18,14,3,2.1,4,1,6,no,1,22
+yes,yes,2021-05-14,male,30,second,Surinamese,Hindustani,4.8,single,university,employed,managerial,4.2,52.5,1200,no,0.0,yes,low,1.5,26,60,3,0.0,4,no,0,27,15,17,2,1.6,2,0,6,no,0,23
+yes,yes,2021-05-14,female,42,second,Surinamese,Maroon,4.5,single,higher vocational,employed,skilled manual,3.2,46.5,950,yes,8.0,yes,moderate,2.3,22,48,3,6.0,8,no,0,21,22,11,4,3.0,5,2,11,no,1,17
+yes,yes,2021-06-21,male,45,Dutch,Dutch,N/A,4.7,married,higher vocational,employed,skilled non-manual,4.2,50.2,1250,no,0.0,yes,moderate,2.5,28,65,5,0.0,4,no,0,22,16,15,2,1.8,3,0,3,no,1,20
+yes,yes,2021-07-12,female,38,second,Surinamese,Creole,5.0,single,secondary vocational,unemployed,unskilled,3.5,44.3,900,yes,10.0,no,low,3.1,25,58,8,6.0,3,no,2,20,20,13,4,2.5,5,1,8,no,0,18
+yes,yes,2021-08-23,male,50,first,Turkish,N/A,4.9,married,higher vocational,employed,skilled non-manual,4.0,42.0,1000,ex-smoker,20.0,yes,high,2.8,30,60,9,0.0,8,yes,1,18,24,12,3,2.8,4,2,12,yes,1,16
+yes,yes,2021-09-18,female,41,first,Ghanaian,N/A,5.1,single,secondary vocational,employed,skilled manual,3.8,46.8,1100,no,0.0,no,low,3.2,27,55,7,0.0,2,no,0,26,18,14,5,1.9,2,0,5,no,0,21
+yes,yes,2021-10-14,male,29,second,Moroccan,N/A,5.2,married,higher vocational,employed,unskilled,3.6,47.5,1200,yes,8.0,yes,moderate,2.9,26,50,10,5.0,6,no,3,23,17,16,1,2.2,3,1,7,no,1,19
+yes,yes,2021-11-30,female,60,Dutch,Dutch,N/A,4.8,married,higher vocational,retired,skilled manual,4.5,51.6,900,ex-smoker,15.0,no,low,2.7,29,70,6,0.0,1,no,0,27,15,17,2,1.5,1,0,4,no,0,23

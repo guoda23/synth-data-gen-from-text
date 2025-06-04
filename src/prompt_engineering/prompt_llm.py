@@ -113,7 +113,8 @@ def prompt_mistral_model(model: str,
 
 def prompt_openrouter_model(model: str,
                             prompt: str,
-                            role: str = "user"):
+                            role: str = "user",
+                            max_retries: int = 3):
     """Prompt a model hosted on OpenRouter via the OpenAI SDK compatibility layer."""
     
     try:
@@ -127,17 +128,28 @@ def prompt_openrouter_model(model: str,
         base_url="https://openrouter.ai/api/v1",
         api_key=api_key,
     )
+    for attempt in range(1, max_retries +1):
+        try:
+            res = client.chat.completions.create(
+                # route through OpenRouter; pass through any model name they support
+                model=model,  
+                messages=[{"role": role, "content": prompt}],
+            )
+        except Exception as e:
+            logging.warning(f"OpenRouter call failed (attempt {attempt}/{max_retries}): {e}")
+            res = None
 
-    res = client.chat.completions.create(
-        # route through OpenRouter; pass through any model name they support
-        model=model,  
-        messages=[{"role": role, "content": prompt}],
-    )
+        if res and getattr(res, 'choices', None):
+            msg = res.choices[0].message.content
+            if msg is not None:
+                logging.info(f"OpenRouter call: model={model!r}, prompt={prompt[:30]!r}…")
+                return msg
+            
+        if attempt < max_retries:
+            logging.info(f"Retry {attempt} failed")
 
-
-    logging.info(f"OpenRouter call: model={model!r}, prompt={prompt[:30]!r}…")
-
-    return res.choices[0].message.content
+    logging.error(f"OpenRouter failed after {max_retries} attempts.")
+    return None
 
 
 # def extract_json_as_dict(json_file: str) -> dict:
