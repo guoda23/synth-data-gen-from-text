@@ -25,7 +25,7 @@ def main():
     
     # Initiate logger
     init_logger(level=args.log_level, file=True, file_path="logs/logs.txt")
-    logging.info("-----Text to tabular SDG with shuffling of columns-----")
+    logging.info("\n-----Text to tabular SDG with shuffling of columns-----")
     logging.info(f"Model: {conf.SDG_MODEL}")
     logging.info(f"Size of synthetic database: {conf.N_SAMPLE}")
     logging.info(f"Prompt ID: {conf.PROMPT_ID}")
@@ -62,7 +62,7 @@ def main():
         all_cols_in_list_bool = all(col in df_synth_int.columns for col in list_cols)
         
         if all_cols_in_list_bool:
-            logging.info(f"All columns generated successfully!")
+            logging.info(f"All column names generated successfully!")
             # remove missing values if any 
             df_synth_int = utils_df.rm_null_rows(df=df_synth_int)
             
@@ -74,7 +74,7 @@ def main():
         else:
             #get missing columns
             missing_cols = [col for col in list_cols if col not in df_synth_int.columns]
-            logging.info(f"Not all columns in list. Missing columnts: {missing_cols}. \nRetrying...")
+            logging.info(f"Not all columns in list. Missing columns: {missing_cols}. \nRetrying...")
             #print generated columns
             logging.info(f"Generated columns: {df_synth_int.columns.tolist()}")
             

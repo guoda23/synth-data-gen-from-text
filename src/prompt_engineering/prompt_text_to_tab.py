@@ -12,7 +12,7 @@ def prompt_synth_tab(prompt: str,
                      role: str="user",
                      show_progress: bool=True) -> str:
     """
-    Generates a synthetic tabular dataframe from a text describin the
+    Generates a synthetic tabular dataframe from a text describing the
     dataset to generate.
     The prompt must include the list of columns and their respective type to include.
     If ambiguous, columns shuold be described or units provided.

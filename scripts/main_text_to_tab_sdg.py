@@ -21,7 +21,7 @@ def main():
     
     # Initiate logger
     init_logger(level=args.log_level, file=True, file_path="logs/logs.txt")
-    logging.info("-----Text to tabular SDG-----")
+    logging.info("\n-----Text to tabular SDG-----")
     logging.info(f"Model: {conf.SDG_MODEL}")
     logging.info(f"Size of synthetic database: {conf.N_SAMPLE}")
     logging.info(f"Prompt ID: {conf.PROMPT_ID}")
